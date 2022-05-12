@@ -1,0 +1,17 @@
+CREATE DATABASE Cricket;
+
+CREATE TABLE TeamDetails(SlNo INT, TeamName VARCHAR(25), Captain VARCHAR(25),
+						OrderHead VARCHAR(25), HomeGround VARCHAR(40), PRIMARY KEY(SlNO))
+						
+SELECT *FROM TeamDetails;	
+
+CREATE TABLE Fixtures(MatchNo INT, HomeTeam VARCHAR(25), AwayTeam VARCHAR(25),
+					 Venue VARCHAR(40), TeamWon VARCHAR(25), TeamLost VARCHAR(25),
+					  PRIMARY KEY(MatchNo))
+					  
+SELECT *FROM Fixtures;					  
+
+CREATE TABLE Points(TeamName VARCHAR(25), NoOfWins INT, NoOfLosses INT, Point INT, 
+					PRIMARY KEY(TeamName))
+					
+SELECT *FROM Points;	
